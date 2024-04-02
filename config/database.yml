@@ -81,7 +81,9 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: myrubyapp_production
-  username: myrubyapp
-  password: <%= ENV["MYRUBYAPP_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  database: postgresql_maeva
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgresql_maeva_user
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+
