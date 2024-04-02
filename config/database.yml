@@ -20,8 +20,8 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  #username: maeva
-  #password: maeva
+  username: maeva
+  password: maeva
   #host: localhost
 
 development:
