@@ -13,14 +13,16 @@
 # gem "pg"
 #
 default: &default
-  adapter: postgresql
+  #adapter: postgresql
+  adapter: sqlite3
   encoding: utf8
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: maeva
-  password: maeva
-  host: localhost
+  timeout: 5000
+  #username: maeva
+  #password: maeva
+  #host: localhost
 
 development:
   <<: *default
