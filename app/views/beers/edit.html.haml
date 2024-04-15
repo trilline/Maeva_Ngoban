@@ -1,0 +1,7 @@
+%h1.py-5 Editing Beer
+= render "form", beer: @beer
+%br
+
+%div.actions
+  = link_to "Show this beer", @beer, class: "btn btn-primary mr-2"
+  = link_to "Back to beers", beers_path, class: "btn btn-secondary"

@@ -57,3 +57,17 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'annotate'
+gem 'devise'
+gem 'haml'
+
+group :development do
+gem 'haml-rails'
+gem 'html2haml'
+end
+gem "tailwindcss-rails", "~> 2.3"
+
+gem "foreman", "~> 0.87.2"
+gem 'bootstrap', '~> 5.3.0'
+gem "sassc-rails"

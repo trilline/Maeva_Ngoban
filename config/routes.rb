@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :tasks
+  resources :categories
+  resources :todos
+  devise_for :users
+  # devise_for :users
+  resources :brands
+  resources :beers
   resources :trucs
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -8,4 +15,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  #root to: "home#index"
+
+    # Définir la route racine pour afficher la liste des tâches
+    root to: "tasks#index"
+
 end
