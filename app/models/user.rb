@@ -6,4 +6,8 @@ class User < ApplicationRecord
   
   has_many :tasks
 
+  def first_login?(request)
+    origin_url = request.env['omniauth.origin'] || request.original_url
+    origin_url == '/users/sign_in'
+  end
 end

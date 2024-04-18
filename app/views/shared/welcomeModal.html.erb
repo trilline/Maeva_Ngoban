@@ -1,0 +1,16 @@
+<% if current_user.first_login? %>
+  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bienvenue sur Task List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Bienvenue sur notre application § Avant de commencer à créer des tâches, veuillez prendre quelques instants pour créer des catégories préalables.</p>
+          <p>Vous pouvez le faire en naviguant vers la section "Catégories" et en cliquant sur le bouton "Nouvelle catégorie".</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
